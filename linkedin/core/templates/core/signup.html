@@ -9,28 +9,28 @@
     <form method="post" action=".">
         {% csrf_token %}
 
-        <div class="mb-3 flex flex-col">
-            <label class="inline-block mb-2">Username</label><br>
+        <div class="mb-4 flex flex-col">
+            <label class="mb-0">Username</label><br>
             {{ form.username }}
         </div>
 
-         <div class="mb-3 flex flex-col">
-            <label class="inline-block mb-2">Email</label><br>
+         <div class="mb-4 flex flex-col">
+            <label class="mb-0">Email</label><br>
             {{ form.email }}
         </div>
 
-        <div class="mb-3 flex flex-col">
-            <label class="inline-block mb-2">Password</label><br>
+        <div class="mb-4 flex flex-col">
+            <label class="mb-0">Password</label><br>
             {{ form.password1 }}
         </div>
 
-        <div class="mb-3 flex flex-col">
-            <label class="inline-block mb-2">Repeat password</label><br>
+        <div class="mb-4 flex flex-col">
+            <label class="mb-0">Repeat password</label><br>
             {{ form.password2 }}
         </div>
 
-        <div class="mb-3 flex flex-col">
-            <label class="inline-block mb-2">Job Title</label><br>
+        <div class="mb-4 flex flex-col">
+            <label class="mb-0">Job Title</label><br>
             {{ form.jobtitle }}
         </div>
 
@@ -44,7 +44,7 @@
             </div>
         {% endif %}
 
-        <button class="py-4 px-8 text-lg bg-teal-500 hover:bg-teal-700 rounded-xl text-white">Register</button>
+        <button class="mt-2 py-4 px-8 text-lg bg-teal-500 hover:bg-teal-700 rounded-xl text-white">Register</button>
     </form>
 </div>
 {% endblock %}

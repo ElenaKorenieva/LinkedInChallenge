@@ -13,7 +13,7 @@
     >
       <a href="/" class="text-xl font-semibold">LinkedIn</a>
       <div class="space-x-6">
-        {% if request.user.is_authenticated %}
+        {% if user.is_authenticated %}
           {% if 'login' not in request.path and 'signup' not in request.path %}
           <div class="flex items-center justify-center">
             <p class="mr-2">Welcome, {{ user.username }}!</p>
