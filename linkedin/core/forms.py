@@ -36,6 +36,23 @@ class SignupForm(UserCreationForm):
         model = User
         fields = ('username','email', 'password1', 'password2', 'jobtitle')
 
+        # username = forms.CharField(widget=forms.TextInput(attrs={
+        # 'placeholder': 'Your username',
+        # 'class': 'w-full py-4 px-6 rounded-xl'
+        # }))
+        # password1 = forms.CharField(widget=forms.PasswordInput(attrs={
+        #     'placeholder': 'Your password',
+        #     'class': 'block w-full py-4 px-6 rounded-xl h-4'
+        # }))
+        # password2 = forms.CharField(widget=forms.PasswordInput(attrs={
+        #     'placeholder': 'Repeat your password',
+        #     'class': 'w-full py-4 px-6 rounded-xl'
+        # }))
+        # jobtitle = forms.CharField(widget=forms.TextInput(attrs={
+        # 'placeholder': 'Enter your job title',
+        # 'class': 'w-full py-4 px-6 rounded-xl'
+        # }))
+
         widgets = {
             'username': forms.TextInput(attrs={
                 'placeholder': 'Your username',
@@ -47,15 +64,15 @@ class SignupForm(UserCreationForm):
                 }),
             'password1': forms.PasswordInput(attrs={
                 'placeholder': 'Enter your password',
-                'class': 'block w-full py-4 px-6 rounded-xl'
+                'class': 'w-full py-4 px-6 rounded-xl'
                 }),
             'password2': forms.PasswordInput(attrs={
                 'placeholder': 'Repeat your password',
-                'class': 'block w-full py-4 px-6 rounded-xl'
+                'class': 'w-full py-4 px-6 rounded-xl'
                 }),
             'jobtitle': forms.TextInput(attrs={
-                'placeholder': 'Your username',
-                'class': 'block w-full py-4 px-6 rounded-xl'
+                'placeholder': 'Enter your job title',
+                'class': 'w-full py-4 px-6 rounded-xl'
             }),
         }
 

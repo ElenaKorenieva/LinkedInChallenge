@@ -6,8 +6,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>{% block title %}{% endblock %} | LinkedIn</title>
   </head>
-  <body>
-    <nav
+  <body class="flex flex-col min-h-screen">
+    <div class="flex-1">
+        <nav
       class="py-6 px-6 flex justify-between items-center border-b border-gray-200"
     >
       <a href="/" class="text-xl font-semibold">LinkedIn</a>
@@ -35,6 +36,8 @@
       </div>
     </nav>
     <div class="px-6 py-6">{% block content %}{% endblock %}</div>
+    </div>
+    
 
     <footer class="py-6 px-6 flex justify-between bg-gray-800">
       <div class="w-2/3 pr-10">
